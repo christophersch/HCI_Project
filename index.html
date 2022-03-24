@@ -1,0 +1,91 @@
+<html>
+
+<style>
+    html {
+        background-color: rgb(145, 189, 255);
+    }
+
+    p {
+        line-height:22px;
+    }
+
+    .body {
+        padding: 50px;
+        background-color:rgb(255, 255, 255);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 50px;
+        max-width: 800px;
+        box-shadow: 0px 0px 14px;   
+        text-align: left;
+    }
+
+    h2 {
+        background-color:rgb(217, 217, 255);
+    }
+
+    hr {
+        margin:30px;
+    }
+
+    img {
+        max-width:100%;
+    }
+</style>
+
+<body>
+
+<center>
+    <div class='body'>
+        <center><h3>Christopher Schiffmann</h3></center>
+        <hr>
+        
+        <h2>Instructions</h2>
+        <p>
+            In the prototypes section, there are 2 links, both leading to different versions of the same prototypes. In each of these, do the following:
+
+            <li>Add a new task (new card)</li>
+            <li>Delete that task (remove card)</li>
+
+            <br>
+            Once you have finished these two instructions in both prototypes, fill in the questionnaire found further ahead.
+        </p>
+        
+        <p>
+            <b>Both prototypes can be run in your browser!</b>
+        </p>
+        
+        <h2>Prototypes</h2>
+        <script>
+            // randomly give the user one of the prototypes first
+            let x = Math.floor(Math.random()*2);
+            let xT = 1-x;
+
+            x += 1;
+            xT += 1;
+
+            document.write('<li><a href=\'prototypes/' + x + '/preview.html\' target="_blank"> First prototype </a></li><br>');
+            document.write('<li><a href=\'prototypes/' + xT + '/preview.html\' target="_blank"> Second prototype </a></li>');
+        </script>
+
+        <br>
+        <h2>Questionnaire</h2>
+        <p>Fill in the questionnaire below. Please make sure to stick as close to your true thoughts as possible:</p>
+
+        <p>
+            Your data is treated anonymously.
+        </p>
+
+        <center>
+            <img src='assets/thank.png' style="scale: auto; box-shadow: 0px 0px 14px;"></img>
+        </center>
+
+        <hr>
+        <center>
+            <i>This research is part of an assignment for the course 'Human Computer Interaction & Affective Computing' at DKE, Maastricht University.</i>
+        </center>
+    </div>
+</center>
+
+</body>
+
+</html>
