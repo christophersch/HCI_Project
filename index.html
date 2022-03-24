@@ -47,7 +47,7 @@
         </p>
         
         <p>
-            <i>Cardinal</i> is a task-tracking application along the likes of Wunderlist and Trello, but with a simple idea: Instead of letting the user add only one date to a task, the user inputs two dates: One being the <b>external</b> deadline, for example the 'due by' date on an assignment decided by a professor, the other being an <b>internal</b> deadline, by when the user wishes to get a task done ahead of time. Internal deadlines have been found to help with getting work done (Ariely & Wertenbroch, 2002).
+            <i>Cardinal</i> is a task-tracking application along the likes of Wunderlist and Trello, but with a simple twist. Instead of letting the user assign only one date to a task, the user inputs two dates: One being the <b>external</b> deadline, for example the 'due by' date on an assignment decided by a professor, the other being an <b>internal</b> deadline, by when the user wishes to get a task done ahead of time. Internal deadlines have been found to help with getting work done (Ariely & Wertenbroch, 2002).
         </p>
 
         <br>
@@ -72,30 +72,41 @@
             Once you have finished these two instructions in both prototypes, fill in the questionnaire found further ahead.
         </p>
         
-        <p>
-            <b>Both prototypes can be run in your browser!</b>
-        </p>
         
         <h2>Prototypes</h2>
+
+            <p>
+                <b>Please keep this page open while using the prototypes!</b>
+            </p>
+        <br>
         <script>
             // randomly give the user one of the prototypes first
             let x = Math.floor(Math.random()*2);
             let xT = 1-x;
+
+            let words = ['CAT', 'DOG']
 
             x += 1;
             xT += 1;
 
             document.write('<li><a href=\'prototypes/' + x + '/preview.html\' target="_blank"> First prototype </a></li><br>');
             document.write('<li><a href=\'prototypes/' + xT + '/preview.html\' target="_blank"> Second prototype </a></li>');
+            document.write('<br><p>Use the following <b>keyword</b> in the questionnaire: <b>'+ words[x-1] +'</b></p>')
         </script>
+        <p>Your keyword will be used in the analysis to know which prototype you were shown first.</p>
 
-        <br>
         <h2>Questionnaire</h2>
         <p>Fill in the questionnaire below. Please make sure to stick as close to your true thoughts as possible!</p>
 
+        <center>
+            > > > <a href="https://forms.gle/vxEQURSEoYwbuZfz7">Questionnaire</a> < < <
+        </center>
+
         <p>
-            Your data is treated anonymously.
+            Your answers will be used in a statistical analysis related to the interface's browsability. All personal information is anonymous.
         </p>
+
+        <br>
 
         <center>
             <img src='assets/thank.png' style="scale: auto; box-shadow: 0px 0px 14px;"></img>
